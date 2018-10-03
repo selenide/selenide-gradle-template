@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'com.codeborne', name: 'selenide', version:'4.14.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.2.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
+    testImplementation group: 'org.slf4j', name: 'jul-to-slf4j', version:'1.7.25'
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version:'1.2.3'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(Test) {
+    systemProperties = System.properties
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "full"
+        }
+    }
+
+    outputs.upToDateWhen { false }
+}
