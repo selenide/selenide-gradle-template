@@ -2,11 +2,6 @@ plugins {
     id 'java'
 }
 
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     testImplementation group: 'com.codeborne', name: 'selenide', version:'4.14.2'
 
@@ -20,12 +15,15 @@ dependencies {
 }
 
 test {
+    // JUnit 5
     useJUnitPlatform()
 }
 
 tasks.withType(Test) {
+    // for using properties from gradle.properties
     systemProperties = System.properties
 
+    // verbose logging in console
     testLogging {
         lifecycle {
             events "started", "skipped", "failed", "standard_error", "standard_out"
@@ -33,5 +31,6 @@ tasks.withType(Test) {
         }
     }
 
+    // start tests every time, even when code not changed
     outputs.upToDateWhen { false }
 }
