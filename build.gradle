@@ -2,6 +2,9 @@ plugins {
     id 'java'
 }
 
+repositories {
+  mavenCentral()
+}
 dependencies {
     testImplementation group: 'com.codeborne', name: 'selenide', version:'4.14.2'
 
