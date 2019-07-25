@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchResults {
 
   // Elements
-  public ElementsCollection found = $$("#ires .g");
+  public ElementsCollection found = $$("a h3");
 
   // Actions
   public SelenideElement getResult(int index) {
