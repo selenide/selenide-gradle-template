@@ -11,13 +11,12 @@ import static com.codeborne.selenide.Selenide.*;
 /**
  * Simple Selenide Test with PageObjects
  */
-public class GoogleTest
-
-{
+public class GoogleTest {
     @Test
     public void searchForSelenide() {
         // Arrange
         open("https://google.com/ncr");
+
         // Act
         new GoogleSearch().searchFor("selenide");
 

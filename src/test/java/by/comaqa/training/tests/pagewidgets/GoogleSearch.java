@@ -6,11 +6,8 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class GoogleSearch {
+  private final SelenideElement searchField = $(byName("q"));
 
-  // Elements
-  SelenideElement searchField = $(byName("q"));
-
-  // Actions
   public void searchFor(String text) {
     searchField.setValue(text).pressEnter();
   }

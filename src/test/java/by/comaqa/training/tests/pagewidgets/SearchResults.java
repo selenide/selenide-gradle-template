@@ -1,19 +1,15 @@
 package by.comaqa.training.tests.pagewidgets;
 
 
-import com.codeborne.selenide.*;
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class SearchResults {
+  public final ElementsCollection found = $$("#search #rso .g");
 
-  // Elements
-  public ElementsCollection found = $$("#ires .g");
-
-  // Actions
   public SelenideElement getResult(int index) {
     return found.get(index);
   }
-
 }
