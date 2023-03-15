@@ -5,7 +5,7 @@ import com.codeborne.selenide.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class GoogleSearch {
+public class SearchPage {
   private final SelenideElement searchField = $(byName("q"));
 
   public void searchFor(String text) {
