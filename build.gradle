@@ -6,7 +6,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-    testImplementation group: 'com.codeborne', name: 'selenide', version:'6.14.0'
+    testImplementation group: 'com.codeborne', name: 'selenide', version:'6.15.0'
 
     // JUnit 5
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
