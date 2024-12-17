@@ -9,7 +9,7 @@ dependencies {
     testImplementation 'com.codeborne:selenide:7.6.1'
 
     // JUnit 5
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.3'
 
     // Logging of 3-rd party libraries
