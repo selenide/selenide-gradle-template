@@ -8,11 +8,11 @@ repositories {
 
 ext {
     junitVersion = '5.13.3'
-    junitPlatformVersion = '1.13.2'
+    junitPlatformVersion = '1.13.3'
 }
 
 dependencies {
-    testImplementation 'com.codeborne:selenide:7.9.3'
+    testImplementation 'com.codeborne:selenide:7.9.4'
 
     // JUnit 5
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
