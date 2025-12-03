@@ -12,7 +12,7 @@ ext {
 }
 
 dependencies {
-    testImplementation 'com.codeborne:selenide:7.12.2'
+    testImplementation 'com.codeborne:selenide:7.12.3'
 
     // JUnit 5
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
