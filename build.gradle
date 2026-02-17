@@ -22,7 +22,7 @@ dependencies {
 
     // Logging of 3-rd party libraries
     testImplementation group: 'org.slf4j', name: 'jul-to-slf4j', version:'2.0.17'
-    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.31'
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.32'
 }
 
 test {
