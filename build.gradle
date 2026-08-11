@@ -8,7 +8,7 @@ repositories {
 
 ext {
     junitVersion = '6.1.3'
-    junitPlatformVersion = '6.1.2'
+    junitPlatformVersion = '6.1.3'
 }
 
 dependencies {
